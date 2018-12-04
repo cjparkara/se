@@ -26,12 +26,19 @@ class Ball:
         self.y += self.yspeed
         self.turtle.goto(self.x, self.y)
 
+    def backword(self):
+        self.x -= self.xspeed
+        self.y -= self.yspeed
+        self.turtle.goto(self.x, self.y)
  
  
 ball = Ball("red", 2, 1)
 
-for i in range(100):
-    ball.move()
+while True:
+    for i in range(100):
+        ball.move()
 
+    for i in range(100):
+        ball.backword()
 
 
