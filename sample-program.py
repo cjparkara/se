@@ -1,3 +1,5 @@
+#이 파일은 원격호스트에 있는 파일입니다.
+#이 파일을 로컬호스트로 내려받아봅니다.
 from turtle import *
 class Ball:
     def __init__(self, color, size, speed):
